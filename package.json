@@ -1,6 +1,6 @@
 {
   "name": "await-to-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A very simple wrapper for javascript async-await to mimic go's error handling",
   "main": "index.js",
   "scripts": {
