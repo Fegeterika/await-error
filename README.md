@@ -1,15 +1,19 @@
-# await-to-wrapper
-A very simple wrapper for javascript async/await to mimic go's error handling.  
-Inspired by https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/
+# await-error
+A small package that provides a quick way to handle error in golang style.
 
 ## usage
 ```javascript
-const to = require('await-to-wrapper');
+const {to, throwAndExit, throwAndExecute} = require('await-error');
 
 async function doSomethingAsync() {
-  let [result, error] = await to(callAsyncFunction(arg1, arg2));
-  if (error) throw error;
+  let result, error;
+  [result, error] = await to(callAsyncFunction(arg1, arg2));
+  if (error) throwAndExit(error, 1);
 
+  [result, error] = await to(anotherAsyncFunction(arg1, arg2));
+  if (error) throwAndExecute(error, handleExceptionSomehow, param1, param2, param3);
+
+  console.log('Success!');
   console.log(result);
 }
 ```

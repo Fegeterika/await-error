@@ -1,19 +1,19 @@
 {
-  "name": "await-to-wrapper",
-  "version": "1.0.1",
-  "description": "A very simple wrapper for javascript async-await to mimic go's error handling",
+  "name": "await-error",
+  "version": "0.1.0",
+  "description": "A small package that provides a quick way to handle error in golang style",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fegeterika/await-to.git"
+    "url": "git+https://github.com/Fegeterika/await-error.git"
   },
   "author": "Jae S. Song",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Fegeterika/await-to/issues"
+    "url": "https://github.com/Fegeterika/await-error/issues"
   },
-  "homepage": "https://github.com/Fegeterika/await-to#readme"
+  "homepage": "https://github.com/Fegeterika/await-error#readme"
 }
