@@ -12,3 +12,5 @@ function to(asyncResult) {
     return [null, err];
   });
 }
+
+module.exports = to;
